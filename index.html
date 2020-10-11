@@ -11,6 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="icon" 
+      type="image/png" 
+      href="./favicon.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -26,13 +29,83 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<div class="name-flex">
-									<p class="name-prefix">I am </p>
-									<h2 class="name">&nbsp;Haris Ahmad</h2>
+								<div class="margin-wrapper">
+									<div class="name-flex">
+										<p class="name-prefix">I am </p>
+										<h2 class="name">&nbsp;Haris Ahmad</h2>
+									</div>
+									<h1>A full-stack web developer who has experience with Javascript and its frameworks </h1>
+									<div class="scroll-downs">
+										<div class="mousey">
+										  <div class="scroller"></div>
+										</div>
+									  </div>
 								</div>
-								<h1>A full-stack web developer who has experience with Javascript and its frameworks </h1>
 							</header>
-							<section class="learn-article">
+
+							<section class="project-heading margin-wrapper">
+								<h3>Here are some projects that I did.</h3>
+								<h2>Some web projects.</h2>
+							</section>
+
+							<section class=" margin-wrapper project-tile-container">
+								<div class="project-tile">
+									<div class="tile-content">
+										<h2>L'Fa Ticket Tracking System</h2>
+										<p>App is built using NodeJs and PostgresQL with a clean architecture. App has features like authentication, authorization, filestorage and database</p>
+										<div class="project-tile-btns">
+											<a href="https://lfa.netlify.app/" target="_blank">Preview</a>
+											<a href="https://github.com/Haris188/bug-tracker" target="_blank">Code</a>
+										</div>
+									</div>
+									<div class="tile-img-container">
+										<img src="./assets/images/lfa.gif" alt="mech-app-thumbnail">
+									</div>
+								</div>
+
+								<div class="project-tile">
+									<div class="tile-content">
+										<h2>TweetBot</h2>
+										<p>An app that posts tweets to a twitter account read from a database. App is built using NodeJS and Twitter API</p>
+										<div class="project-tile-btns">
+											<a href="https://twitter.com/renderingquotes" target="_blank">Preview</a>
+											<a href="https://github.com/Haris188/tweetbot" target="_blank">Code</a>
+										</div>
+									</div>
+									<div class="tile-img-container">
+										<img src="./assets/images/tweet.png" alt="mech-app-thumbnail">
+									</div>
+								</div>
+
+								<div class="project-tile">
+									<div class="tile-content">
+										<h2>React-Express-Passport Starter</h2>
+										<p>A monorepo starter for NodeJs, ReactJs and PassportJs. This template helps you quick start without worrying about environment setup</p>
+										<div class="project-tile-btns">
+											<a href="https://github.com/Haris188/react-express-starter" target="_blank">Code</a>
+										</div>
+									</div>
+									<div class="tile-img-container">
+										<img src="./assets/images/react.jpg" alt="mech-app-thumbnail">
+									</div>
+								</div>
+
+								<div class="project-tile">
+									<div class="tile-content">
+										<h2>Postgres Access</h2>
+										<p>An API for postgres databases. This API creates SQL queries, execute them and return the result of the query.</p>
+										<div class="project-tile-btns">
+											<a href="https://github.com/Haris188/postgres_access" target="_blank">Code</a>
+										</div>
+									</div>
+									<div class="tile-img-container">
+										<img src="./assets/images/pg.png" alt="mech-app-thumbnail">
+									</div>
+								</div>
+
+							</section>
+
+							<section class="learn-article margin-wrapper">
 								<h3>Want to know how I learnt ES6, NodeJS, ReactJS in only 15 days?</h3>
 								<a href="https://link.medium.com/sGSIyJPYZ7 " target="_blank">
 									<div class="flex-btn">
@@ -40,83 +113,6 @@
 										<p>Check out my article on Medium.com</p>
 									</div>
 								</a>
-							</section>
-							<section class="project-heading">
-								<h3>...And here are some projects that I did</h3>
-								<h2>Some web projects</h2>
-							</section>
-							<section class="custom project-grid-container">
-								
-								<div class="project-tile">
-									<img src="./images/mech.png" alt="mech-app-thumbnail">
-									<div class="tile-content">
-										<h2>Mechanic App</h2>
-										<h3>(In development)</h3>
-										<p>The app allows users to connect to mechanics online and get quotes for their car repair online.</p>
-										<div class="project-tile-btns">
-											<a href="https://github.com/Haris188/mechanic-web-client" target="_blank">Client</a>
-											<a href="https://github.com/Haris188/mechanic-server"target="_blank">Server</a>
-											<a href="https://mechanicapp.netlify.app/" target="_blank">Website</a>
-										</div>
-									</div>
-								</div>
-								<div class="project-tile">
-									<img src="./images/tweet.png" alt="Tweet-bot-thumbnail">
-									<div class="tile-content">
-										<h2>TwitterBot</h2>
-										<p>The app tweets a quote periodically. It takes a quote from
-											the database after some time has passed since the last
-											tweet and then tweets it.</p>
-										<div class="project-tile-btns">
-											<a href="https://github.com/Haris188/tweetbot" target="_blank">GitHub</a>
-											<a href="https://twitter.com/renderingquotes" target="_blank">Website</a>
-										</div>
-									</div>
-								</div>
-								<div class="project-tile">
-									<img src="./images/poll.png" alt="Poll-app-thumbnail">
-									<div class="tile-content">
-										<h2>Poll Website Template</h2>
-										<p>A front-end template. Demonstrates designing</p>
-										<div class="project-tile-btns">
-											<a href="https://github.com/Haris188/poll-app" target="_blank">GitHub</a>
-											<a href="https://eleventhhourpoll.herokuapp.com/" target="_blank">Website</a>
-										</div>
-									</div>
-								</div>
-								<div class="project-tile">
-									<img src="./images/promotional.png" alt="promotional-thumb">
-									<div class="tile-content">
-										<h2>Promotional Email</h2>
-										<p>A front-end template. Demonstrates designing</p>
-										<div class="project-tile-btns">
-											<a href="https://github.com/Haris188/promotional-email" target="_blank">GitHub</a>
-											<a href="https://haris188.github.io/promotional-email/" target="_blank">Website</a>
-										</div>
-									</div>
-								</div>
-								<div class="project-tile ">
-									<img src="./images/transactional.png" alt="transactiona-thumb">
-									<div class="tile-content">
-										<h2>Transactional Email</h2>
-										<p>A front-end template. Demonstrates designing</p>
-										<div class="project-tile-btns">
-											<a href="https://github.com/Haris188/transactional-email" target="_blank">GitHub</a>
-											<a href="https://haris188.github.io/transactional-email/" target="_blank">Website</a>
-										</div>
-									</div>
-								</div>
-								<div class="project-tile">
-									<img src="./images/newsletter.png" alt="newsletter-thumb">
-									<div class="tile-content">
-										<h2>Newsletter Email</h2>
-										<p>A front-end template. Demonstrates designing</p>
-										<div class="project-tile-btns">
-											<a href="https://github.com/Haris188/newsletter-email" target="_blank">GitHub</a>
-											<a href="https://haris188.github.io/newsletter-email/" target="_blank">Website</a>
-										</div>
-									</div>
-								</div>
 							</section>
 						</div>
 					</div>

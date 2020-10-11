@@ -3,9 +3,6 @@ body{
     text-align: center;
 }
 
-#main{
-    margin-top: 7em;
-}
 
 .custom h1, h2, h3, h4, p{
     margin: 0;
@@ -18,7 +15,7 @@ body{
 
 
 nav{
-    background-color: rgb(41, 41, 41);
+    background-color: #1B1D1A;
     color: white;
     height: 4em;
     display: flex;
@@ -60,6 +57,24 @@ nav li:first-child{
     margin-left: 0;
 }
 
+header{
+    background: url("../images/header_bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.margin-wrapper{
+    margin: 0 auto;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    max-width: 1200px;
+}
+
 .name{
     font-size: 1.5em;
     letter-spacing: normal;
@@ -76,15 +91,21 @@ nav li:first-child{
 
 .name-flex{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
     margin: 0em auto;
-    margin-top: 3em;
+    margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.learn-article{
+    margin: 3em auto;
 }
 
 .learn-article h3{
     font-size: 1.3em;
     margin-bottom: 0.5em;
+    font-weight: bold;
 }
 
 .flex-btn{
@@ -120,27 +141,15 @@ nav li:first-child{
     margin:0;
 }
 
-.project-grid-container{
-    margin-top: 0.5em;
-    --auto-grid-min-size: 19rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-    grid-gap: 1rem;
-    justify-content: center;
+.project-tile-container{
+
 }
 
 .project-tile{
     margin: 1em auto;
-    /* height: 18em; */
-    max-width: 20em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border-radius: 5px;
     text-align: center;
     overflow: hidden;
-    color: white;
-    background-color: rgb(41, 41, 41);
     min-height: 30em;
 }
 
@@ -148,14 +157,34 @@ nav li:first-child{
     color:black;
 }
 
+.project-tile{
+    overflow: visible;
+    margin: 0;
+}
+
+.tile-img-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .project-tile img{
-    margin-top: 1em;
-    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
 }
 
 .project-tile .tile-content{
-    padding: 2em;
+    margin: auto auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
     max-width: 18em;
+    font-size: 1.2em;
+}
+
+.tile-content h2{
+    font-weight: bold;
 }
 
 .tile-pink{
@@ -187,14 +216,75 @@ nav li:first-child{
 }
 
 .project-tile a{
-    background-color: rgba(0, 0, 0, 0.26);
+    background-color: rgb(44, 44, 44);
     color: white;
     text-decoration: none;
     padding: 0.5em;
-    border-radius: 5px;
+    border-radius: 3px;
+    border-color: rgb(44, 44, 44);
+    border-width: 1px;
+    border-style: solid;
 }
 
 .project-tile a:hover{
-    background-color: rgba(255, 255, 255, 0.39);
+    background-color: white;
+    color: black;
     transition: background ease-in 100ms;
 }
+
+.scroll-downs {
+    margin: auto;
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+  
+
+  @media only screen and (min-width: 580px){
+    .margin-wrapper{
+        padding-right: 4em;
+        padding-left: 4em;
+    }
+
+    .project-tile{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: start;
+        min-height: auto;
+        margin-top: 5em;
+    }
+
+    .project-tile .tile-content{
+        margin: auto 0;
+        text-align: left;
+    }
+  }
+
+  @media only screen and (min-width: 2500px){
+    .margin-wrapper{
+        max-width: 1700px;
+    }
+  }
