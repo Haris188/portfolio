@@ -142,23 +142,13 @@ header{
 }
 
 .project-tile{
-    margin: 2em auto;
+    margin: 5em auto;
     border-radius: 5px;
-    text-align: center;
-    overflow: hidden;
-    min-height: 30em;
     overflow: visible;
 }
 
 .black-font{
     color:black;
-}
-
-
-.tile-img-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .project-tile img{
@@ -262,6 +252,13 @@ header{
         padding-right: 4em;
         padding-left: 4em;
     }
+
+
+.tile-img-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
     .project-tile{
         display: grid;
