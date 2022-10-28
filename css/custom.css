@@ -1,0 +1,35 @@
+
+.hero-name{
+    font-weight: normal;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.about-btn{
+    margin-top: 1.5em !important;
+    margin-bottom: 2em;
+}
+
+.about-img{
+    max-width: 13em;
+}
+
+.about-img-div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.about-row{
+    align-items: center;
+}
+
+.second-btn{
+    left: 3.5em !important;
+}
+.avatar{
+    max-width: 10em;
+    margin-bottom: 2em;
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+body{
+    background-color: #282828;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1300px;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.hero{
+    height: 120vh;
+    width: 100%;
+    background-image: url('./assets/hero.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-container{
+    height: 80%;
+}
+
+.hero-content .headline{
+    background-color: #282828;
+    padding: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: -10px 10px #CFF4D2;
+    margin-bottom: 3em;
+}
+.hero-content span{
+    font-size: 3em;
+}
+.hero-content .prominent{
+    font-size: 4em;
+    font-weight: bold;
+}
+.btn{
+    color: #282828;
+    background-color: #CFF4D2;
+    box-shadow: -5px 5px #282828;
+    padding: 1em;
+    font-weight: bold;
+}
+.card {
+    height: 400px;
+    max-width: 400px;
+    background-color: #1E1E1E;
+    padding: 3em;
+    border-radius: 50px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+.card .card-img{
+    height: 50%;
+    overflow: hidden;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 100%;
+}
+.card .card-content{
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+.card .card-content p{
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+.head{
+    height: 400px;
+    box-shadow: -5px 5px #CFF4D2;
+    background-color: #205072;
+}
+.article-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 2em;
+}
+footer{
+    height: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+    body{
+        font-size: 12px;
+    }
+    .flex-space-between{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .article-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero{
+        height: 100vh;
+    }
+    .hero-container{
+        height: 100%;
+    }
+    .card {
+        height: 300px;
+    }
+    .hero-content span{
+        font-size: 2em;
+    }
+    .hero-content .prominent{
+        font-size: 3em;
+    }
+    .hero-content{
+        margin-bottom: 4em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+ 
+    .article-grid{
+        grid-template-columns: 1fr;
+    }
+}
