@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Portfolio</title>
@@ -26,50 +27,63 @@
 
 <body>
 
-<!-- Preloader -->
-<div id="preloader" class="light">
-	<div class="outer">
-		<!-- Google Chrome -->
-		<div class="infinityChrome">
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
+	<!-- Preloader -->
+	<div id="preloader" class="light">
+		<div class="outer">
+			<!-- Google Chrome -->
+			<div class="infinityChrome">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 
-		<!-- Safari and others -->
-		<div class="infinity">
-			<div>
-				<span></span>
+			<!-- Safari and others -->
+			<div class="infinity">
+				<div>
+					<span></span>
+				</div>
+				<div>
+					<span></span>
+				</div>
+				<div>
+					<span></span>
+				</div>
 			</div>
-			<div>
-				<span></span>
-			</div>
-			<div>
-				<span></span>
-			</div>
+			<!-- Stuff -->
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+						<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
 		</div>
-		<!-- Stuff -->
-		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
-			<defs>
-				<filter id="goo">
-					<feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
-					<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-					<feBlend in="SourceGraphic" in2="goo" />
-				</filter>
-			</defs>
-		</svg>
 	</div>
-</div>
 
-<!-- mobile header -->
-<header class="mobile-header-1 light">
-	<div class="container">
-		<!-- menu icon -->
-		<div class="menu-icon d-inline-flex mr-4">
-			<button>
-				<span></span>
-			</button>
+	<!-- mobile header -->
+	<header class="mobile-header-1 light">
+		<div class="container">
+			<!-- menu icon -->
+			<div class="menu-icon d-inline-flex mr-4">
+				<button>
+					<span></span>
+				</button>
+			</div>
+			<!-- logo image -->
+			<div class="site-logo">
+				<a href="index-light.html">
+					<!-- <img src="images/logo-dark.svg" alt="Bolby" /> -->
+					<h1>HA.</h1>
+				</a>
+			</div>
 		</div>
+	</header>
+
+	<!-- desktop header -->
+	<header class="desktop-header-1 light d-flex align-items-start flex-column">
+
 		<!-- logo image -->
 		<div class="site-logo">
 			<a href="index-light.html">
@@ -77,266 +91,319 @@
 				<h1>HA.</h1>
 			</a>
 		</div>
-	</div>
-</header>
 
-<!-- desktop header -->
-<header class="desktop-header-1 light d-flex align-items-start flex-column">
-	
-	<!-- logo image -->
-	<div class="site-logo">
-		<a href="index-light.html">
-			<!-- <img src="images/logo-dark.svg" alt="Bolby" /> -->
-			<h1>HA.</h1>
-		</a>
-	</div>
-	
-	<!-- main menu -->
-	<nav>
-		<ul class="vertical-menu scrollspy">
-			<li class="active"><a href="#home"><i class="icon-home"></i>Home</a></li>
-			<li><a href="#about"><i class="icon-user-following"></i>About</a></li>
-			<li><a href="#experience"><i class="icon-graduation"></i>Experience</a></li>
-			<li><a href="#works"><i class="icon-layers"></i>Works</a></li>
-			<li><a href="#testimonials"><i class="icon-people"></i>Testimonial</a></li>
-			<li><a href="#blog"><i class="icon-note"></i>Blog</a></li>
-		</ul>
-	</nav>
-	
-	<!-- site footer -->
-	<div class="footer">
-		<!-- copyright text -->
-		<!-- <span class="copyright">© 2020 HarisCodes</span> -->
-	</div>
+		<!-- main menu -->
+		<nav>
+			<ul class="vertical-menu scrollspy">
+				<li class="active"><a href="#home"><i class="icon-home"></i>Home</a></li>
+				<li><a href="#about"><i class="icon-user-following"></i>About</a></li>
+				<li><a href="#experience"><i class="icon-graduation"></i>Experience</a></li>
+				<li><a href="#works"><i class="icon-layers"></i>Works</a></li>
+				<li><a href="#testimonials"><i class="icon-people"></i>Testimonial</a></li>
+				<li><a href="#blog"><i class="icon-note"></i>Blog</a></li>
+			</ul>
+		</nav>
 
-</header>
-
-<!-- main layout -->
-<main class="content">
-	
-	<!-- section home -->
-	<section id="home" class="home d-flex light align-items-center">
-		<div class="container">
-
-			<!-- intro -->
-			<div class="intro">
-				<!-- avatar image -->
-				<img class="avatar" src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortCurly&accessoriesType=Blank&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=BlazerShirt&eyeType=Happy&eyebrowType=Default&mouthType=Default&skinColor=Brown" alt="Bolby" class="mb-4" />
-
-				<!-- info -->
-				<h3 class="mb-2 mt-0 hero-name">Haris Ahmad</h3>
-				<h1>I am the developer, your customers' would like</h1>
-
-				<!-- social icons -->
-				<ul class="social-icons light list-inline mb-0 mt-4">
-					<li class="list-inline-item"><a href="https://github.com/Haris188" target="_blank"><i class="fab fa-github"></i></a></li>
-					<li class="list-inline-item"><a href="https://www.linkedin.com/in/harisahmadlink/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-					<li class="list-inline-item"><a href="https://dev.to/harisahmadev" target="_blank"><i class="fab fa-dev"></i></a></li>
-				</ul>
-
-				<!-- buttons -->
-				<div class="mt-4">
-					<a href="#works" class="btn btn-default">See my projects</a>
-				</div>
-			</div>
-			
-			<!-- scroll down mouse wheel -->
-			<div class="scroll-down light">
-				<a href="#about" class="mouse-wrapper">
-					<span class="bold">Scroll Down</span>
-					<span class="mouse">
-						<span class="wheel"></span>
-					</span>
-				</a>
-			</div>
-
-			<!-- parallax layers -->
-			<div class="parallax" data-relative-input="true">
-
-				<svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg"><path d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z" fill="#FFD15C" fill-rule="evenodd"/></svg>
-
-				<svg width="26" height="26" data-depth="0.2" class="layer p2" xmlns="http://www.w3.org/2000/svg"><path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="#FF4C60" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
-
-				<svg width="30" height="25" data-depth="0.3" class="layer p3" xmlns="http://www.w3.org/2000/svg"><path d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z" fill="#44D7B6" fill-rule="evenodd"/></svg>
-
-				<svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#FFD15C" fill-rule="evenodd"/></svg>
-
-				<svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd"/></svg>
-
-				<svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg"><g fill="#FF4C60" fill-rule="evenodd"><path d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z"/><path d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z"/></g></svg>
-
-				<svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg"><path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
-
-				<svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd"/></svg>
-
-				<svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9" xmlns="http://www.w3.org/2000/svg"><path d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z" fill="#6C6CE5" fill-rule="evenodd"/></svg>
-
-				<svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg"><g fill="#44D7B6" fill-rule="evenodd"><path d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z"/><path d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z"/></g></svg>
-
-				<svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg"><path d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z" fill="#FFD15C" fill-rule="evenodd"/></svg>
-
-			</div>
+		<!-- site footer -->
+		<div class="footer">
+			<!-- copyright text -->
+			<!-- <span class="copyright">© 2020 HarisCodes</span> -->
 		</div>
-		
-	</section>
 
-	<!-- section about -->
-	<section id="about">
+	</header>
 
-		<div class="container">
-			
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">About Me</h2>
+	<!-- main layout -->
+	<main class="content">
 
-			<div class="spacer" data-height="60"></div>
-			
-			<div class="row">
+		<!-- section home -->
+		<section id="home" class="home d-flex light align-items-center">
+			<div class="container">
 
-				<div class="col-md-3">
-					<div class="text-center text-md-left">
-						<!-- avatar image -->
-						<img class="avatar" src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortCurly&accessoriesType=Blank&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=BlazerShirt&eyeType=Side&eyebrowType=Default&mouthType=Default&skinColor=Brown" alt="Bolby" />
+				<!-- intro -->
+				<div class="intro">
+					<!-- avatar image -->
+					<img class="avatar"
+						src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortCurly&accessoriesType=Blank&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=BlazerShirt&eyeType=Happy&eyebrowType=Default&mouthType=Default&skinColor=Brown"
+						alt="Bolby" class="mb-4" />
+
+					<!-- info -->
+					<h3 class="mb-2 mt-0 hero-name">Haris Ahmad</h3>
+					<h1>I am the developer, your customers' would like</h1>
+
+					<!-- social icons -->
+					<ul class="social-icons light list-inline mb-0 mt-4">
+						<li class="list-inline-item"><a href="https://github.com/Haris188" target="_blank"><i
+									class="fab fa-github"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/harisahmadlink/"
+								target="_blank"><i class="fab fa-linkedin"></i></a></li>
+						<li class="list-inline-item"><a href="https://dev.to/harisahmadev" target="_blank"><i
+									class="fab fa-dev"></i></a></li>
+					</ul>
+
+					<!-- buttons -->
+					<div class="mt-4">
+						<a href="#works" class="btn btn-default">See my projects</a>
 					</div>
-					<div class="spacer d-md-none d-lg-none" data-height="30"></div>
 				</div>
 
-				<div class="col-md-9 triangle-left-md triangle-top-sm">
-					<div class="rounded bg-white shadow-dark padding-30">
-						<div class="row about-row">
-							<div class="col-md-6">
-								<!-- about text -->
-								<p>I transfer ideas from philosophical world to material realm and I make my softwares desirable, flexible, and scalable. I have experience of working in a team and I am well-equipped with knowledge and practice in  <span class="bold">ReactJS, NextJS, Redux, NodeJS, MongoDB, SQL, Typescript and Jest</span>. I would be very glad to receive a message from you. Ping <a href="mailto:harisahmad.188@gmail.com">harisahmad.188@gmail.com</a></p>
-								<!-- <div class="mt-3 about-btn">
+				<!-- scroll down mouse wheel -->
+				<div class="scroll-down light">
+					<a href="#about" class="mouse-wrapper">
+						<span class="bold">Scroll Down</span>
+						<span class="mouse">
+							<span class="wheel"></span>
+						</span>
+					</a>
+				</div>
+
+				<!-- parallax layers -->
+				<div class="parallax" data-relative-input="true">
+
+					<svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z"
+							fill="#FFD15C" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="26" height="26" data-depth="0.2" class="layer p2" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="#FF4C60" stroke-width="3"
+							fill="none" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="30" height="25" data-depth="0.3" class="layer p3" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z"
+							fill="#44D7B6" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg">
+						<rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5"
+							fill="#FFD15C" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg">
+						<rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5"
+							fill="#6C6CE5" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg">
+						<g fill="#FF4C60" fill-rule="evenodd">
+							<path
+								d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z" />
+							<path
+								d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z" />
+						</g>
+					</svg>
+
+					<svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3"
+							fill="none" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg">
+						<rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5"
+							fill="#6C6CE5" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z"
+							fill="#6C6CE5" fill-rule="evenodd" />
+					</svg>
+
+					<svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg">
+						<g fill="#44D7B6" fill-rule="evenodd">
+							<path
+								d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z" />
+							<path
+								d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z" />
+						</g>
+					</svg>
+
+					<svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z"
+							fill="#FFD15C" fill-rule="evenodd" />
+					</svg>
+
+				</div>
+			</div>
+
+		</section>
+
+		<!-- section about -->
+		<section id="about">
+
+			<div class="container">
+
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">About Me</h2>
+
+				<div class="spacer" data-height="60"></div>
+
+				<div class="row">
+
+					<div class="col-md-3">
+						<div class="text-center text-md-left">
+							<!-- avatar image -->
+							<img class="avatar"
+								src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortCurly&accessoriesType=Blank&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=BlazerShirt&eyeType=Side&eyebrowType=Default&mouthType=Default&skinColor=Brown"
+								alt="Bolby" />
+						</div>
+						<div class="spacer d-md-none d-lg-none" data-height="30"></div>
+					</div>
+
+					<div class="col-md-9 triangle-left-md triangle-top-sm">
+						<div class="rounded bg-white shadow-dark padding-30">
+							<div class="row about-row">
+								<div class="col-md-6">
+									<!-- about text -->
+									<p>As a seasoned Senior Software Developer, I bring a wealth of experience in crafting robust solutions at the intersection of innovation and reliability. My expertise spans a multitude of technologies, with a focus on driving impactful results through Node.js, Javascript, Microservices architecture, Event-Driven systems, React and TypeScript.
+										With a passion for problem-solving and a commitment to delivering high-quality software, I thrive in dynamic environments where I can leverage my skills to tackle complex challenges head-on.
+										Let's connect and explore how I can contribute to your projects and organization. Ping <a
+											href="mailto:harisahmad.188@gmail.com">harisahmad.188@gmail.com</a></p>
+									<!-- <div class="mt-3 about-btn">
 									<a href="/files/Resume.pdf" download="" class="btn btn-default">Download Resume</a>
 								</div> -->
-							</div>
-							<div class="col-md-6 about-img-div">
-								<img class="about-img" src="./images/assets/about.png" alt="about-ill">
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<!-- row end -->
-		</div>
-		
-	</section>
-	
-	
-	<!-- section experience -->
-	<section id="experience">
-
-		<div class="container">
-			
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Experience & Education</h2>
-
-			<div class="spacer" data-height="60"></div>
-			
-			<div class="row">
-
-				<div class="col-md-12">
-					
-					<!-- timeline wrapper -->
-					<div class="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden">
-
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp">
-							<div class="content">
-								<span class="time">2022 - Present</span>
-								<h3 class="title">Walmart Canada (Hybrid)</h3>
-								<p>Responsibilities includes working with different teams to fulfill their development, automation and data needs. Further duties includes support and administration</p>
+								</div>
+								<div class="col-md-6 about-img-div">
+									<img class="about-img" src="./images/assets/about.png" alt="about-ill">
+								</div>
 							</div>
 						</div>
-						<!-- main line -->
-						<span class="line"></span>
-
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp">
-							<div class="content">
-								<span class="time">2021 - 2022</span>
-								<h3 class="title">Lynx ERP Solutions (In-Office)</h3>
-								<p>Worked on a high profile ERP software which deals with the important functions of a business like accounting, banking, sales, invetory, stock, etc. I also managed to created an employee tracking system and successfully integrated it with the ERP software. Moreover I implemented a component of CMS for easier content delivery to the frontend.</p>
-							</div>
-						</div>
-						<!-- main line -->
-						<span class="line"></span>
-
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp">
-							<div class="content">
-								<span class="time">2021 - 2022</span>
-								<h3 class="title">DigLit (Volunteer - Remote)</h3>
-								<p>Worked in a team to build and test various components of the client's project. Worked with Agile methodologies, on top of
-									GitFlow for maximum team efficiency. Created and implemented test use-cases in
-									TDD style for maximum confidence against
-									modification.</p>
-							</div>
-						</div>
-						<!-- main line -->
-						<span class="line"></span>
-
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp">
-							<div class="content">
-								<span class="time">2015 - 2017</span>
-								<h3 class="title">University of Central Punjab</h3>
-								<p>Curriculum included major subjects like Programming in C/C++, Databases, Introduction to Computer Networks and Calculus.</p>
-							</div>
-						</div>
-						<!-- main line -->
-						<span class="line"></span>
-
 					</div>
 
 				</div>
+				<!-- row end -->
+			</div>
+
+		</section>
+
+
+		<!-- section experience -->
+		<section id="experience">
+
+			<div class="container">
+
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Experience & Education</h2>
+
+				<div class="spacer" data-height="60"></div>
+
+				<div class="row">
+
+					<div class="col-md-12">
+
+						<!-- timeline wrapper -->
+						<div class="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden">
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp">
+								<div class="content">
+									<span class="time">2022 - Present</span>
+									<h3 class="title">Walmart Canada (Hybrid)</h3>
+									<p>Responsibilities includes working with different teams to fulfill their
+										development, automation and data needs. Further duties includes support and
+										administration</p>
+								</div>
+							</div>
+							<!-- main line -->
+							<span class="line"></span>
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp">
+								<div class="content">
+									<span class="time">2021 - 2022</span>
+									<h3 class="title">Lynx ERP Solutions (In-Office)</h3>
+									<p>Worked on a high profile ERP software which deals with the important functions of
+										a business like accounting, banking, sales, invetory, stock, etc. I also managed
+										to created an employee tracking system and successfully integrated it with the
+										ERP software. Moreover I implemented a component of CMS for easier content
+										delivery to the frontend.</p>
+								</div>
+							</div>
+							<!-- main line -->
+							<span class="line"></span>
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp">
+								<div class="content">
+									<span class="time">2021 - 2022</span>
+									<h3 class="title">DigLit (Volunteer - Remote)</h3>
+									<p>Worked in a team to build and test various components of the client's project.
+										Worked with Agile methodologies, on top of
+										GitFlow for maximum team efficiency. Created and implemented test use-cases in
+										TDD style for maximum confidence against
+										modification.</p>
+								</div>
+							</div>
+							<!-- main line -->
+							<span class="line"></span>
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp">
+								<div class="content">
+									<span class="time">2015 - 2017</span>
+									<h3 class="title">University of Central Punjab</h3>
+									<p>Curriculum included major subjects like Programming in C/C++, Databases,
+										Introduction to Computer Networks and Calculus.</p>
+								</div>
+							</div>
+							<!-- main line -->
+							<span class="line"></span>
+
+						</div>
+
+					</div>
+
+				</div>
 
 			</div>
 
-		</div>
-		
-	</section>
-	
-	<!-- section works -->
-	<section id="works">
+		</section>
 
-		<div class="container">
-			
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Recent works</h2>
+		<!-- section works -->
+		<section id="works">
 
-			<div class="spacer" data-height="60"></div>
-			
-			<!-- portolio wrapper -->
-			<div class="row portfolio-wrapper">
-				
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item art">
-					<div class="portfolio-item rounded shadow-dark">
-						<div class="details">
-							<span class="term">Full Stack</span>
-							<h4 class="title">LF'a Bug Tracker</h4>
-							<p class="subtitle">A system that helps you manage and track bugs
-								in software like Jira</p>
-							<div class="stack">
-								<span>ExpressJS</span>
-								<span>MUI</span>
-								<span>Typescript</span>
-								<span>Postgresql</span>
+			<div class="container">
+
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Recent works</h2>
+
+				<div class="spacer" data-height="60"></div>
+
+				<!-- portolio wrapper -->
+				<div class="row portfolio-wrapper">
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item art">
+						<div class="portfolio-item rounded shadow-dark">
+							<div class="details">
+								<span class="term">Full Stack</span>
+								<h4 class="title">LF'a Bug Tracker</h4>
+								<p class="subtitle">A system that helps you manage and track bugs
+									in software like Jira</p>
+								<div class="stack">
+									<span>AWS</span>
+									<span>MUI</span>
+									<span>Typescript</span>
+									<span>Postgresql</span>
+								</div>
+								<a href="https://github.com/Haris188/bug-tracker" target="_blank"><span
+										class="more-button"><i class="fab fa-github"></i></span></a>
+								<a href="https://lfa.netlify.app/login" target="_blank"><span
+										class="more-button second-btn"><i class="fas fa-desktop"></i></span></a>
 							</div>
-							<a href="https://github.com/Haris188/bug-tracker" target="_blank"><span class="more-button"><i class="fab fa-github"></i></span></a>
-							<a href="https://lfa.netlify.app/login" target="_blank"><span class="more-button second-btn"><i class="fas fa-desktop"></i></span></a>
-						</div>
-						<div class="thumb">
-							<img src="./images/assets/lfa2.png" alt="Portfolio-title" />
-							<div class="mask"></div>
+							<div class="thumb">
+								<img src="./images/assets/lfa2.png" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
 						</div>
 					</div>
-			</div>
 
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item art">
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item art">
 						<div class="portfolio-item rounded shadow-dark">
 							<div class="details">
 								<span class="term">Full Stack</span>
@@ -348,18 +415,41 @@
 									<span>ExpressJS</span>
 									<span>MongoDB</span>
 								</div>
-								<a href="https://github.com/Haris188/TakePdfWithYou" target="_blank"><span class="more-button"><i class="fab fa-github"></i></span></a>
-								<a href="https://tpwy.netlify.app/"><span class="more-button second-btn"><i class="fas fa-desktop"></i></span></a>
+								<a href="https://github.com/Haris188/TakePdfWithYou" target="_blank"><span
+										class="more-button"><i class="fab fa-github"></i></span></a>
+								<a href="https://tpwy.netlify.app/"><span class="more-button second-btn"><i
+											class="fas fa-desktop"></i></span></a>
 							</div>
 							<div class="thumb">
 								<img src="./images/assets/tpy2.png" alt="Portfolio-title" />
 								<div class="mask"></div>
 							</div>
 						</div>
-				</div>
+					</div>
 
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item art">
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item art">
+						<div class="portfolio-item rounded shadow-dark">
+							<div class="details">
+								<span class="term">Full Stack</span>
+								<h4 class="title">Haris Codes Blog</h4>
+								<p class="subtitle">A small blog where I share my thoughts.</p>
+								<div class="stack">
+									<span>Gatsby.JS</span>
+									<span>Node.JS</span>
+								</div>
+								<a href="https://hariscodes.com" target="_blank"><span class="more-button second-btn"><i
+											class="fas fa-desktop"></i></span></a>
+							</div>
+							<div class="thumb">
+								<img src="./images/assets/hc-web.png" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item art">
 						<div class="portfolio-item rounded shadow-dark">
 							<div class="details">
 								<span class="term">Frontend</span>
@@ -372,38 +462,43 @@
 									<span>YouTube API</span>
 									<span>Material-UI</span>
 								</div>
-								<a href="https://github.com/Haris188/thumpare" target="_blank"><span class="more-button"><i class="fab fa-github"></i></span></a>
-								<a href="https://thumpare.softwarefactory.ca/" target="_blank"><span class="more-button second-btn"><i class="fas fa-desktop"></i></span></a>
+								<a href="https://github.com/Haris188/thumpare" target="_blank"><span
+										class="more-button"><i class="fab fa-github"></i></span></a>
+								<a href="https://thumpare.softwarefactory.ca/" target="_blank"><span
+										class="more-button second-btn"><i class="fas fa-desktop"></i></span></a>
 							</div>
 							<div class="thumb">
 								<img src="./images/assets/thumb.png" alt="Portfolio-title" />
 								<div class="mask"></div>
 							</div>
 						</div>
-				</div>
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item art">
+					</div>
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item art">
 						<div class="portfolio-item rounded shadow-dark">
 							<div class="details">
 								<span class="term">Backend</span>
 								<h4 class="title">TweetBot</h4>
-								<p class="subtitle">An app that posts tweets to a twitter account read from a database.</p>
+								<p class="subtitle">An app that posts tweets to a twitter account read from a database.
+								</p>
 								<div class="stack">
 									<span>NodeJS</span>
 									<span>Twitter API</span>
 									<span>Postgresql</span>
 								</div>
-								<a href="https://github.com/Haris188/tweetbot" target="_blank"><span class="more-button"><i class="fab fa-github"></i></span></a>
-								<a href="https://twitter.com/renderingquotes" target="_blank"><span class="more-button second-btn"><i class="fas fa-desktop"></i></span></a>
+								<a href="https://github.com/Haris188/tweetbot" target="_blank"><span
+										class="more-button"><i class="fab fa-github"></i></span></a>
+								<a href="https://twitter.com/renderingquotes" target="_blank"><span
+										class="more-button second-btn"><i class="fas fa-desktop"></i></span></a>
 							</div>
 							<div class="thumb">
 								<img src="./images/assets/tweet2.png" alt="Portfolio-title" />
 								<div class="mask"></div>
 							</div>
 						</div>
-				</div>
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item art">
+					</div>
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item art">
 						<div class="portfolio-item rounded shadow-dark">
 							<div class="details">
 								<span class="term">Design</span>
@@ -412,16 +507,17 @@
 								<div class="stack">
 									<span>Figma</span>
 								</div>
-								<a href="https://www.figma.com/proto/r5In6EzpJVBoi5kdyE7HEV/thumpair?node-id=3%3A18&scaling=min-zoom&page-id=0%3A1" target="_blank"><span class="more-button"><i class="fas fa-desktop"></i></span></a>
+								<a href="https://www.figma.com/proto/r5In6EzpJVBoi5kdyE7HEV/thumpair?node-id=3%3A18&scaling=min-zoom&page-id=0%3A1"
+									target="_blank"><span class="more-button"><i class="fas fa-desktop"></i></span></a>
 							</div>
 							<div class="thumb">
 								<img src="./images/assets/thumb-des.png" alt="Portfolio-title" />
 								<div class="mask"></div>
 							</div>
 						</div>
-				</div>
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item art">
+					</div>
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item art">
 						<div class="portfolio-item rounded shadow-dark">
 							<div class="details">
 								<span class="term">Design</span>
@@ -430,119 +526,125 @@
 								<div class="stack">
 									<span>Figma</span>
 								</div>
-								<a href="https://www.figma.com/proto/1QUfIqVtZ2VE2OFk5r6gRJ/Portfolio---Coming-soon?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1" target="_blank"><span class="more-button"><i class="fas fa-desktop"></i></span></a>
+								<a href="https://www.figma.com/proto/1QUfIqVtZ2VE2OFk5r6gRJ/Portfolio---Coming-soon?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1"
+									target="_blank"><span class="more-button"><i class="fas fa-desktop"></i></span></a>
 							</div>
 							<div class="thumb">
 								<img src="./images/assets/hc.png" alt="Portfolio-title" />
 								<div class="mask"></div>
 							</div>
 						</div>
-				</div>
-
-			</div>
-		</div>
-
-	</section>
-	
-	<!-- section testimonials -->
-	<section id="testimonials">
-
-		<div class="container">
-			
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Testimonial</h2>
-
-			<div class="spacer" data-height="60"></div>
-			
-			<!-- testimonials wrapper -->
-			<div class="testimonials-wrapper">
-				
-				<!-- testimonial item -->
-				<div class="testimonial-item text-center mx-auto">
-					<div class="thumb mb-3 mx-auto">
-						<img src="./images/assets/leigh.jpeg" alt="customer-name" />						
 					</div>
-					<h4 class="mt-3 mb-0">Leigh Silverstein</h4>
-					<span class="subtitle">Team Lead at Diglit</span>
-					<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
-						<p class="mb-0">Haris is one of those wonderful talents that just understands what it means to be a good programmer. Aside from his deep knowledge of JS, he also does the little things. He reads the documentation, he asks smart questions, he knows how to research, he rises to every challenge. It's been a pleasure.</p>
-					</div>
-				</div>
-				
 
+				</div>
 			</div>
 
-		</div>
+		</section>
 
-	</section>
-	
-	<!-- section blog -->
-	<section id="blog">
+		<!-- section testimonials -->
+		<section id="testimonials">
 
-		<div class="container">
-			
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Latest Posts</h2>
+			<div class="container">
 
-			<div class="spacer" data-height="60"></div>
-			
-			<div class="row blog-wrapper">
-				
-				<div class="col-md-4">
-					<!-- blog item -->
-					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-						<div class="thumb">
-							<a target="_blank" href="https://link.medium.com/sGSIyJPYZ7">
-								<span class="category">Blog</span>
-							</a>
-							<a target="_blank" href="https://link.medium.com/sGSIyJPYZ7">
-								<img src="./images/assets/article.png" alt="blog-title" />
-							</a>
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Testimonial</h2>
+
+				<div class="spacer" data-height="60"></div>
+
+				<!-- testimonials wrapper -->
+				<div class="testimonials-wrapper">
+
+					<!-- testimonial item -->
+					<div class="testimonial-item text-center mx-auto">
+						<div class="thumb mb-3 mx-auto">
+							<img src="./images/assets/leigh.jpeg" alt="customer-name" />
 						</div>
-						<div class="details">
-							<h4 class="my-0 title"><a href="https://link.medium.com/sGSIyJPYZ7" target="_blank">This is how I learn ReactJS in just 15 days</a></h4>
-							<ul class="list-inline meta mb-0 mt-2">
-								<li class="list-inline-item">04 June, 2020</li>
-								<li class="list-inline-item">Medium</li>
-							</ul>
+						<h4 class="mt-3 mb-0">Leigh Silverstein</h4>
+						<span class="subtitle">Team Lead at Diglit</span>
+						<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
+							<p class="mb-0">Haris is one of those wonderful talents that just understands what it means
+								to be a good programmer. Aside from his deep knowledge of JS, he also does the little
+								things. He reads the documentation, he asks smart questions, he knows how to research,
+								he rises to every challenge. It's been a pleasure.</p>
 						</div>
 					</div>
+
+
 				</div>
 
 			</div>
 
-		</div>
+		</section>
 
-	</section>
-	
+		<!-- section blog -->
+		<section id="blog">
+
+			<div class="container">
+
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Latest Posts</h2>
+
+				<div class="spacer" data-height="60"></div>
+
+				<div class="row blog-wrapper">
+
+					<div class="col-md-4">
+						<!-- blog item -->
+						<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+							<div class="thumb">
+								<a target="_blank" href="https://link.medium.com/sGSIyJPYZ7">
+									<span class="category">Blog</span>
+								</a>
+								<a target="_blank" href="https://link.medium.com/sGSIyJPYZ7">
+									<img src="./images/assets/article.png" alt="blog-title" />
+								</a>
+							</div>
+							<div class="details">
+								<h4 class="my-0 title"><a href="https://link.medium.com/sGSIyJPYZ7" target="_blank">This
+										is how I learn ReactJS in just 15 days</a></h4>
+								<ul class="list-inline meta mb-0 mt-2">
+									<li class="list-inline-item">04 June, 2020</li>
+									<li class="list-inline-item">Medium</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
 
 
-	<div class="spacer" data-height="96"></div>
-	
-</main>
 
-<!-- Go to top button -->
-<a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+		<div class="spacer" data-height="96"></div>
 
-<!-- SCRIPTS -->
-<script src="js/jquery-1.12.3.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/infinite-scroll.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/validator.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/morphext.min.js"></script>
-<script src="js/parallax.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/formSubmit.js"></script>
+	</main>
+
+	<!-- Go to top button -->
+	<a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+
+	<!-- SCRIPTS -->
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/infinite-scroll.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/contact.js"></script>
+	<script src="js/validator.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/morphext.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/formSubmit.js"></script>
 
 </body>
+
 </html>
